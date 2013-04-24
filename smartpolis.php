@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /*
 Plugin Name: SmartPolis
 Plugin URI: http://cmios.ru/kasko.html

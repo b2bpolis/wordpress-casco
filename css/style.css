@@ -34,20 +34,88 @@ div.blok div.table-tarif div.pol1 {top:0; left:130px; z-index:2; position:absolu
 div.blok div.table-tarif div.pol2 {top:0; left:310px; height:100%; z-index:2; position:absolute; width:1px;border-left:1px solid #dddddd;}
 div.blok div.table-tarif div.row-th {float:left; font-size:16px; width:100%;}
 div.blok div.table-tarif div.row-th div.td1 {float:left; height:30px; padding:0 15px; width:100px;}
-div.blok div.table-tarif div.row-th div.td2 {float:left;  width:150px; padding:0 15px;}
+div.blok div.table-tarif div.row-th div.td2 {float:left;  width:250px; padding:0 15px;}
 div.blok div.table-tarif div.row-th div.td3 { margin-left:330px;color:#478abc; font-weight:bold;}
 
 div.blok input.error , div.blok select.error {
-	border-color: red;
+  border-color: red;
 }
 #smartpolis_contact_form, #smartpolis_message_before_form, #smartpolis_order_form {
-	display:none;
+  display:none;
+  color: #555;
 }
+
 #smartpolis_order_form {
-	background: none repeat scroll 0 0 white;
-	border: 1px solid black;
-	position: absolute;
-	z-index: 10;
+  width: 500px;
+  margin-left: -250px;
+  background: none repeat scroll 0 0 white;
+  border: 1px solid #dfdfdf;
+  padding: 20px;
+  padding-bottom: 0;
+  position: absolute;
+  z-index: 10;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  left: 50%;
+
+}
+#smartpolis_order_form input[type=text], #smartpolis_order_form textarea {
+  width: 485px;
+}
+#smartpolis_order_form td:first-child {
+ border-top: none;
+}
+#smartpolis_order_form td:last-child {
+  border-bottom: none;
+}
+
+#smartpolis_order_form_submit {
+  float: right;
+}
+.smartpolis_order_form_title {
+  margin: 0!important;
+}
+
+#smartpolis_car_marks,
+#smartpolis_car_models,
+#smartpolis_car_modifications,
+#smartpolis_car_cost,
+#smartpolis_car_manufacturing_year,
+#smartpolis_drivers_count,
+.smartpolis_car_form_age,
+.smartpolis_car_form_gender,
+.smartpolis_car_form_experience {
+  width: 200px;
+  padding: 6px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.smartpolis_car_form_label {
+  color: #333!important;
+}
+.smartpolis_car_form_age, .smartpolis_car_form_gender, .smartpolis_car_form_experience {
+  width: 132px;
+}
+#smartpolis_car_cost {
+  width: 188px;
+}
+#smartpolis_client_name {
+  width: 280px;
+}
+#smartpolis_client_email, #smartpolis_client_phone {
+  width: 115px;
+}
+#smartpolis_client_phone {
+  margin-left: 10px;
+}
+.smartpolis_broker_tariff_title, .smartpolis_broker_tariff {
+  color: #DC6744!important;
+}
+.hidden {
+  display: none;
 }
 
 div.blok div.table-tarif div.row {float:left; margin:10px 0 0;border:1px solid #dddddd; position:relative; padding:2px; border-radius:5px; width:100%;
@@ -66,6 +134,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 }
 div.blok div.table-tarif div.row a.but {float:right; margin-right:10px; background:url(../img/sale-but.jpg) no-repeat; width:169px; height:28px; position:relative;top:-5px;}
+div.blok div.table-tarif div.row a.but:hover { background:url(../img/sale-but.jpg) no-repeat; }
 div.blok div.table-tarif div.td1 {}
 div.blok div.table-tarif div.td2 { color:#7f7f7f;}
 div.blok div.table-tarif div.td3 { margin-left:330px;}
@@ -73,3 +142,8 @@ div.blok div.table-tarif div.row div.td1 {float:left; padding:0 15px 0; width:10
 div.blok div.table-tarif div.row div.td2 {float:left;  width:150px; padding:20px 15px 0;}
 div.blok div.table-tarif div.row div.td3 { margin-left:330px;font-weight:bold; padding:20px 0 0;color:#44a621;}
 
+
+#smartpolis_contact_form label {
+  color: #333;
+  font-weight: bold;
+}
